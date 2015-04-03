@@ -6,7 +6,13 @@ var name = 'Tyler';
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
   //Code Here
-
+var isTyler = function(name){
+	if (name === "Tyler"){
+		return true;
+	} else{
+		return false;
+	}
+};
 
 //Next problem
 
@@ -16,7 +22,10 @@ var name = 'Tyler';
 
 
   //Code Here
-
+var getName = function(){
+	var newName= prompt("Name?");
+	return(newName);
+}
 
 //Next Problem
 
@@ -26,7 +35,9 @@ var name = 'Tyler';
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
-
+var welcome = function(getName){
+	alert("Welcome " + name);
+}
 
 //Next problem
 
@@ -37,6 +48,8 @@ var name = 'Tyler';
 
   //Answer Here
 
+  	//arguments
+  	//parameters
 
 //Next problem
 
@@ -47,7 +60,7 @@ var name = 'Tyler';
 
   //Answer Here
 
-
+  	// NaN, null, undefined, 0, '', false. Test using an if statement
 
 //Next Problem
 
@@ -56,13 +69,15 @@ var name = 'Tyler';
 //Create a function called myName that returns your name
 
   //Code Here
-
+var myName = function(){
+	return "Jacob"
+}
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
-
+var newMyName = myName();
 //Now alert the result of invoking newMyName
-
+alert(newMyName);
 
 
 //Next problem
@@ -72,9 +87,15 @@ var name = 'Tyler';
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
-
+var outerFn = function (){
+	return function(){
+		return "Jacob";
+	}
+}
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
-
+var innerFn = outerFn();
 //Now invoke innerFn.
+
+innerFn();
