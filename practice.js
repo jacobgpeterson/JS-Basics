@@ -48,8 +48,8 @@ var welcome = function(getName){
 
   //Answer Here
 
-  	//arguments
-  	//parameters
+  	//arguments are passed through a function
+  	//parameters are variables that are set inside a function and only exist within that function
 
 //Next problem
 
